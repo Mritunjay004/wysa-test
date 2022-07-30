@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  padding: 0;
+  height: 100vh;
+}
+
+.theme-options {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: right;
+  div {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: 2px 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    opacity: 0.5;
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  #theme-white {
+    background-color: #eee;
+  }
+  #theme-blue {
+    background-color: #1e41c1;
+  }
+  #theme-orange {
+    background-color: #b64b1e;
+  }
+  #theme-purple {
+    background-color: #7852ae;
+  }
+  #theme-green {
+    background-color: #5faf3b;
+  }
+  #theme-black {
+    background-color: #000;
+  }
+}
+
+.content-box {
+  max-width: 500px;
+  margin: 10px 50px 20px;
+  padding: 1em;
+  background-color: #eee;
+  color: #222;
+  border-radius: 8px;
+  h3 {
+    font-size: 26px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  h5 {
+    font-size: 20px;
+    margin: 0 0 22px 0;
+    line-height: 1.5;
+  }
+}
+
+// theming
+.App.theme-white {
+  background-color: #ffffff;
+  .content-box {
+    background-color: #f6f6f6;
+    h3,
+    h5 {
+      color: #000000;
+    }
+    p {
+      color: #000;
+    }
+  }
+}
+
+.App.theme-blue {
+  background-color: #bec7e7;
+  .content-box {
+    background-color: #d8def4;
+    h3,
+    h5 {
+      color: #1e41c1;
+    }
+    p {
+      color: #000;
+    }
+  }
+}
+.App.theme-orange {
+  background-color: #f4c9b7;
+  .content-box {
+    background-color: #f4dfd6;
+    h3,
+    h5 {
+      color: #b64b1e;
+    }
+    p {
+      color: #000;
+    }
+  }
+}
+.App.theme-purple {
+  background-color: #d0b7f4;
+  .content-box {
+    background-color: #ecdfff;
+    h3,
+    h5 {
+      color: #7852ae;
+    }
+    p {
+      color: #000;
+    }
+  }
+}
+.App.theme-green {
+  background-color: #c3e3c1;
+  .content-box {
+    background-color: #e2f6e1;
+    h3,
+    h5 {
+      color: #5faf3b;
+    }
+    p {
+      color: #000;
+    }
+  }
+}
+.App.theme-black {
+  background-color: #5c5c5c;
+  .content-box {
+    background-color: #333;
+    h3,
+    h5 {
+      color: #ffffff;
+    }
+    p {
+      color: #ccc;
+    }
+  }
+}
